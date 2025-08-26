@@ -1,7 +1,5 @@
 # 📚 BookBuddy — Discover, Imagine, Connect
 
-![BookBuddy Hero](attached_image:1)
-
 ---
 
 ## Overview
@@ -30,8 +28,6 @@ BookBuddy was created as my very first project after transitioning into front-en
 - 🏷 **Genre Filter:** Easily filter books by genres such as Mystery, Biography, Science & Nature, Self-Help, and more  
 - 💖 **Wishlist:** Mark your favorite books for quick access and personalized recommendations
 
-![Filtered Book Collection](attached_image:2)
-
 ---
 
 ## How to Access
@@ -57,7 +53,4 @@ BookBuddy was created as my very first project after transitioning into front-en
 - **Design:**  
   Focus on clean layout, responsive design principles, and accessibility for all readers
 
----
-
-## Project Structure
 
