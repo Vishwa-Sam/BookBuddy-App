@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --textsize : 2.5rem;
+    --textsize1 : 1rem;
+    --textsize2 : 1.25rem;
+    --textsize3 : 1.75rem;
+    --textsize4 : 1.875rem;
+    --colorWhite : white;
+    --colorBlack : black;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(186, 206, 199);
+}
+.headline{
+    background-image: url(../img/books.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+
+}
+
+.headline h1{
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: var(--textsize);
+    color: rgb(220, 255, 200);
+}
+
+.headline p, h4{
+    padding-bottom: 10px;
+    font-weight: 400;
+    color: rgb(220, 255, 200);
+}
+
+.headline p{
+    font-weight: bold;
+}
+
+.sort{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sort button{
+    background: linear-gradient(to right, #f59494, #ffabab);
+    margin-right: 15px;
+    width: 130px;
+    height: 50px;
+
+    border-radius: 6px;
+    border-width: 1px;
+
+    vertical-align: top;
+    font-weight: bold;
+    cursor: pointer;    
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    margin: 30px 10px;
+    gap: 50px 15px;
+}
+.book-grid{
+    border: 1px none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 13px;
+    background-color: var(--colorWhite);
+    
+}
+
+.book-grid img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.book-grid h3, p, button{
+    margin-top: 10px;
+}
+
+.book-grid h3{
+    color:#2C3E50;
+}
+
+.book-grid button{
+    width: 100px;
+    height: 45px;
+    background-color: #27AE60;
+    color: var(--colorWhite);
+    font-weight: bold;
+
+    vertical-align: top;
+    margin-right: 10px;
+
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.author{
+    color: grey;
+}
+
+.price{
+    font-weight: 500;
+}
+.no-results.hidden{
+    display: none;
+}
+.no-results {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  margin: 2rem;
+}
+
+
+/* All effects styles */
+
+
+.sort button:hover{
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    transform: translateY(-10px);
+    transition: transform 0.35s ease;
+}
+
+.book-grid button:hover{
+    transform: translateY(-5px);
+}
+
+.book-grid:hover{
+    transform: scale(1.04);
+    transition: transform 0.3s;
+
+}
+
+.popup-overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.popup-box{
+    background: rgb(221, 218, 218);
+    color: var(--colorBlack);
+    text-align: center;
+    border-radius: 5px;
+
+    width: 33%;
+    max-width: 500px;
+    height: 40%;
+    z-index: 3;
+
+
+    position: relative;
+
+}
+.popup-box h3{
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+.popup-box p{
+    font-weight: 500;
+    padding: 15px;
+}
+
+.popup-box .close , .popup-box h3{
+    display: inline-block;
+}
+
+.popup-box .close{
+    position: absolute;
+    right: 7px;
+    top: 1px;
+    font-size: var(--textsize4);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.pop-overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.pop-box .closed , .pop-box h3{
+    display: inline-block;
+
+}
+
+.pop-box{
+    background: linear-gradient(to right, #c0e7b0, #aac2e2);
+    color: var(--colorBlack);
+    text-align: center;
+    border-radius: 5px;
+
+    width: 33%;
+    max-width: 500px;
+    height: 40%;
+    z-index: 3;
+
+
+    position: relative;
+
+}
+.pop-box .close{
+    position: absolute;
+    right: 7px;
+    top: 1px;
+
+    font-size: var(--textsize4);
+    font-weight: bold;
+    
+    cursor: pointer;
+}
+.pop-box h3{
+    margin-top: 5px;
+    padding-bottom: 8px;
+}
+.pop-box p{
+    font-weight: 500;
+    padding: 15px;
+}
+
+

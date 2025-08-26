@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BookBuddy Login 🔐</title>
+    <link rel="icon" href="img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+   <h3>Welcome Back Reader!</h3>
+   <p>Sign in to access your saved lists, bookstore orders, and account.</p>
+    <form class="form">
+
+        <label for="name">Username :</label>
+        <input type="text" placeholder="Enter your username" minlength="5" required class="user" id="name"> 
+        
+        <label for="password">Password :</label>
+        <input type="password" placeholder="Enter your password" minlength="8" maxlength="16" required class="code" id="password">
+        
+        <div class="options">
+            <label class="remember">
+            <input type="checkbox" class="remember">Remember me
+            </label>
+            <p class="forgot"><a href="">Forgot Password?</a></p>
+        </div>
+        <button>Enter Library</button>
+        
+        <p class="divider">-OR Continue With-</p>
+            <div class="links">
+                <button>🗒Library username</button>
+                <button>✉︎ Magic Link</button>
+            </div>
+            
+             <p class="log-in">New here?<span style="color:black">Create an account</span><a href="signup.html"> - Sign Up</a></p>
+
+    </form>
+    </div>
+</body>
+
+</html>

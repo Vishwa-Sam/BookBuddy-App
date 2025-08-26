@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: rgb(186, 206, 199);
+}
+.nav{
+    background-color: rgb(69, 72, 75);
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #3498DB;
+}
+.link:hover{
+    transform: scale(1.15);
+    transition: transform 0.15 ease ;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+} 
+
+.book-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    margin: 30px 10px;
+    gap: 50px 15px;
+} 
+
+.book-grid{
+    border: 1px none ;
+    border-radius: 5px;
+    text-align: center;
+    padding: 13px;
+    background-color: white;
+    
+}
+.book-grid img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.book-grid h3, p, button{
+    margin-top: 10px;
+}
+
+.book-grid h3{
+    color:#2C3E50;
+    font-weight: bold;
+    font-size: 1.87rem;
+}
+
+.book-grid button{
+    width: 100px;
+    height: 45px;
+    background-color: #27AE60;
+    color: white;
+    font-weight: bold;
+
+    vertical-align: top;
+    margin-right: 10px;
+
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.author{
+    color: grey;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.price{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.book-grid button:hover{
+    transform: translateY(-5px);
+}
+
+.book-grid:hover{
+    transform: scale(1.04);
+    transition: transform 0.3s;
+
+}
+
+.empty{
+    font-weight: bold;
+    font-size: 2rem;
+    text-wrap: nowrap;
+    margin-top: 50%;
+    margin-left: 200%;
+}
+footer{
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    height: 50px;
+
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.info{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 13px;
+    padding-right: 20px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 13px;
+    margin-left: 40px;
+}
+
+.info:hover{
+    color: #3498DB;
+    transform: scale(1.15);
+    transition: transform 0.15 ease ;
+}
+
+@media (max-width: 650px) {
+    .book-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        gap: 30px 100px;
+        margin-left: 15%;
+        width: 70vw;
+    }
+    .bottom{
+      width: 100vw;
+      height: 15px;
+      font-size: 0.5rem;
+      padding-top: 10px;
+      position: relative;
+      top: -15px;
+      
+    }
+      
+    footer{
+        position: fixed;
+        bottom: 0;
+        height: 5vh;
+    }
+}

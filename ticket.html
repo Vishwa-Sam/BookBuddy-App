@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BookBuddy Ticket 📝</title>
+    <link rel="icon" href="img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="styles/ticket.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <div class="form-container">
+        <h3>Hello Reader!</h3>
+        <p>Facing an Issue? Let's Fix It Together!</p>
+        <p>Fill in the details below and we'll get back to you soon!</p>
+
+        <form class="form">
+
+            <label for="name">Full Name :</label>
+            <input type="text" placeholder="Enter your Full Name" required class="user" i>
+
+            <label for="name">Username :</label>
+            <input type="text" placeholder="Enter your username" required class="user">
+
+            <label for="mail">E-mail Address :</label>
+            <input type="email" placeholder="Enter your Mail" required class="mail" id="e-mail">
+
+            <label for="category">Select issue Category:</label>
+            <select required>
+                <option value="">-- Select Issue Type --</option>
+                <option value="login">Login Issue</option>
+                <option value="payment">Payment Problem</option>
+                <option value="bug">Bug Report</option>
+                <option value="suggestion">Feature Suggestion</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="subject">Subject :</label>
+            <input type="text" placeholder="Subject" required class="subject">
+
+            <textarea name="problem" placeholder="Describe your issue"></textarea>
+            
+            <div>
+                <label for="file">Attachments:</label>
+                <input type="file" class="files">
+                <label for="priority">Priority:</label>
+                <select required class="priority"> 
+                    <option value="">Select Category</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                    <option value="Critical">Critical</option>
+                </select>
+            </div>
+            
+
+            <p class="p2">We're Here to Help!</p>
+
+            <button>Submit Ticket</button>
+        </form>
+    </div>
+</body>
+
+</html>

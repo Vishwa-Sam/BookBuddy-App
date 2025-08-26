@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background: rgb(235, 255, 245);
+    height:100vh ;
+    font-size: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    background-color: rgb(253, 255, 254);
+    border-style: none;
+    border-radius: 8px;
+    box-shadow: 0 0 25px black;
+
+    height: 800px;
+    width: 600px;
+    padding: 30px;
+
+}
+h3{
+    font-weight: bold;
+    font-size: 1.875rem;
+    margin-top: 5px;
+}
+
+p{
+    color: rgb(5, 119, 37);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user, .code , .mail, .ph-no, .genre, .code-2{
+    height: 35px;
+    border: 1px solid ;
+    border-radius: 8px;  
+    margin: 10px 0px;
+}
+
+::placeholder{
+    font-weight: bold;
+    font-size: 0.813rem;
+    padding: 0 5px;
+}
+
+.user:focus, .code:focus, .mail:focus, .ph-no:focus , .genre:focus, .code-2:focus{
+    outline: none;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 30px 50px;
+    font-size: 15px;
+}
+.heading{
+    font-size: 20px;
+}
+.code {
+    width: 8vw;
+    position: relative;
+    top: 20px;
+    left: -4vw;
+    width: 13vw;
+    
+}
+.ph-no{
+    position: relative;
+    top: 20px;
+    left: -8vw;
+    width: 13vw;
+    height: 12px;
+}
+.code-2{
+    position: relative;
+    top: 20px;
+    left: -8vw;
+    width: 14vw;
+}
+#preferred-genre{
+    margin-left: -70px;
+}
+.options .genre{
+    position: relative;
+    top: 20px;
+    left: -6vw;
+    width: 20vw;
+    height: 4.5vh;
+}
+
+#grid-label{
+    width: 8vw;
+}
+
+.ph-no, .genre,.code-2
+.remember {
+  padding-top:10px;
+  padding-bottom: 15px;
+}
+
+button{
+    height: 40px;
+    background-color: rgb(46, 139, 87);
+    color: white;
+    font-weight: bold;
+    font-size: 0.98rem;
+
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.divider{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.links button{
+    background-color: rgb(230, 244, 234);
+    color: black;
+    font-weight: 400;
+    height: 6vh;
+    padding: 5px 15px;
+    border-radius: 10px;
+}   
+
+.log-in{
+    font-size: 1.25rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ @media (max-width: 650px) {
+    .form-container {
+        width: 85vw;
+        height: auto;
+        padding: 20px;
+
+    }
+    body {
+        font-size: var(--textsize1);
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: var(--textsize);
+    }
+
+    .signup {
+        font-size: var(--textsize1);
+    }
+    .options{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    }
+    .ph-no, .code-2{
+        margin-left: 50px;
+        margin-top: -20px;
+        width: 84vw;
+        margin-bottom: 20px;
+    }
+    .code{
+        margin-left: 28px;
+        width: 83vw;
+        margin-top: -9px;
+        margin-bottom: 20px;
+    }
+    .genre{
+        margin-left: 40px;
+        margin-top: -9px;
+        margin-bottom: 30px;
+    }
+    #grid-label{
+        width: 84vw;
+        padding: 10px 10px;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    #preferred-genre{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}

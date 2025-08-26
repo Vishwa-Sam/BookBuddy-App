@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BookBuddy Sign-Up 🔐</title>
+    <link rel="icon" href="img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="styles/signup.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Join the Readers Community</h3>
+        <p>Create your account to save favorites, track your reading list, and shop the bookstore.</p>
+        <form class="form">
+
+            <label for="name">Full Name :</label>
+            <input type="text" placeholder="Enter your Full Name" required class="user" id="fullname">
+
+            <label for="name">Username :</label>
+            <input type="text" placeholder="Enter your unique username" minlength="5" required class="user" id="name">
+
+            <label for="mail">E-mail Address :</label>
+            <input type="email" placeholder="Enter your Mail" required class="mail" id="e-mail">
+
+
+            <div class="options">
+
+                <label for="password" class="heading">Password :</label>
+                <input type="password" placeholder="Enter your password" minlength="8" maxlength="16" required
+                    class="code" id="password">
+
+                <label for="password" class="heading" id="grid-label" class="extra-class">Re-enter Password :</label>
+                <input type="password" placeholder="Re-enter your password" minlength="8" maxlength="16" required
+                    class="code-2" id="re-password">
+            </div>
+
+           <div class="options">
+            <label for="phonenumber" class="heading" id="grid-label">Phone-No :</label>
+            <input type="number" placeholder="Enter your Phone number" required class="ph-no" id="phonenumber">
+            <label for="Preferred Genre" class="heading" id="preferred-genre">Genre :</label>
+            <select class="genre" id="grid-label">
+                <option value="">-- Select Genre --</option>
+                <option value="Mystery & Thriller">Mystery & Thriller</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Historical Fiction">Historical Fiction</option>
+                <option value="Biography">Biography</option>
+                <option value="Science & Nature">Science & Nature</option>
+                <option value="Romance">Romance</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Fanatsy">Fanatsy</option>
+            </select>
+            </div>
+
+            <label class="remember">
+                <input type="checkbox" class="remember">Remember me
+            </label>
+            <label class="terms">
+                <input type="checkbox" class="terms">By creating an account you agree to our Terms and Privacy.
+            </label>
+
+            <button>Create Account</button>
+            <p class="divider">-OR-</p>
+            <div class="links">
+                <button>🗒 Continue with Library username</button>
+                <button>✉︎ Magic Link</button>
+            </div>
+            
+             <p class="log-in">Already have an acoount?<a href="login.html"> Sign In</a></p>
+
+        </form>
+    </div>
+</body>
+
+</html>

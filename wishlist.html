@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BookBuddy-Wishlist</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" href="styles/wishlist.css">
+        
+    </head>
+    <body>
+        <div class="nav">
+            <h4 class="link"><a href="index.html">&larr; Go back</a></h4>
+    
+        </div>
+
+        <h2>Your wishlist-<span class="book-count">0</span></h2>
+    
+        <div class="book-container">
+
+        </div>
+         <footer>
+        <div class="bottom">
+            <p class="info">&copy; copyright 2025 </p>
+            <p class="info" id="about">About Us</p>
+            <p class="info">Terms & Policy </p>
+        </div>
+    </footer>
+
+        
+    <script src="js-code/wishlist.js" type="module">
+        
+        function updateCopyRight() {
+            let year = document.getElementById('year');
+            let thisYear = new Date().getFullYear();
+            year.textContent = thisYear;
+        }
+        updateCopyRight();
+
+    </script>
+
+    </body>
+</html>

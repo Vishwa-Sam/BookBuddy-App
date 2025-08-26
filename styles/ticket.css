@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background: rgb(235, 255, 245);
+    height:100vh ;
+    font-size: 1.25rem ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    background-color: rgb(253, 255, 254);
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 0 25px black;
+
+    height: 880px;
+    width: 650px;
+    padding: 20px;
+
+}
+h3{
+    font-weight: bold;
+    font-size: 1.875rem;
+    margin-top: 5px;
+}
+
+p{
+    font-size: 1.2rem;
+    color: rgb(5, 119, 37);
+    margin-top: -15px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user, .code , .mail, .subject{
+    height: 35px;
+    border: 1px solid ;
+    border-radius: 8px;  
+    margin: 14px 0px;
+}
+
+select{
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 8px;  
+    margin: 14px 0px;
+}
+
+textarea{
+    height: 100px;
+    margin-top: 14px;
+    font-size: 0.98rem;
+    font-weight: bold
+}
+
+textarea::placeholder{
+    font-size: 1rem;
+    padding-top: 5px;
+}
+
+::placeholder{
+    font-weight: bold;
+    font-size: 0.813rem;
+    padding-left: 5px;
+}
+
+.user:focus, .code:focus, .mail:focus, .subject:focus, select{
+    outline: none;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.98rem;
+    
+}
+
+button{
+    height: 40px;
+    background-color: rgb(46, 139, 87);;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.p2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.priority{
+    width: 10.5vw;
+    height: 38px;
+    padding:10px 30px;
+    margin-left: 5px;
+}
+
+@media (max-width: 650px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+        height: auto;
+    }
+
+    body {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+    .priority{
+    width: 22vw;
+    height: 38px;
+    padding:10px 10px;
+    margin-left: 5px;
+}
+}

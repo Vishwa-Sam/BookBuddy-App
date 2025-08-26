@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BookBuddy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/icon.png">
+    <link href="styles/nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left-section">
+                <h3><a href="landingpage.html">BookBuddy</a></h3>
+                <img src="img/icon.png" alt="" class="logo">
+            </div>
+            <div class="middle-section">
+                <div class="search-container">
+                    <input type="search" placeholder="What are you looking for?" class="search-bar">
+                    <button><img src="img/search icon.png" alt="search" class="search-img" ></button>
+                </div>
+            </div>
+            <div class="right-section">
+
+                <p><a href="landingpage.html" class="link">Home</a></p>
+                <div class="menu-wrapper">
+                    <p class="menu">Contact Us</p>
+                    <ul class="sub-menu">
+                        <li>Mail-Id</li>
+                        <li><a href="ticket.html" target="_blank">Create Ticket</a></li>
+                        <li><a href="">Discord</a></li>
+                    </ul>
+                </div>
+                <p ><a href="wishlist.html" class="link">Future Reads-<span class="book-count">0</span></a></p>
+                <button class="logging"><a href="signup.html">Sign Up</a></button>
+                <button class="logging"><a href="login.html">Log In</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="headline">
+            <h1>Uncover a World of Imagination - One Page at a Time</h1>
+            <p>Because some stories aren't just read - they're experienced.</p>
+            <h4>Browse through a handpicked collection of must-read titles.</h4>
+
+        </section>
+
+        <section>
+            <div class="sort">
+                <button data-category="all">All</button>
+                <button data-category="Mystery & Thriller">Mystery & Thriller</button>
+                <button data-category="Adventure">Adventure</button>
+                <button data-category="Self-Help">Self-Help</button>
+                <button data-category="Historical Fiction">Historical Fiction</button>
+                <button data-category="Biography">Biography</button>
+                <button data-category="Science & Nature">Science & Nature</button>
+                <button data-category="Romance">Romance</button>
+                <button data-category="Psychology">Psychology</button>
+                <button data-category="Fanatsy">Fanatsy</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+
+            </div>
+            <p id="noResults" class="no-results hidden">No results found 😕</p>
+        </section>
+    </main>
+
+    <div class="popup-overlay">
+        <div class="popup-box">
+            <h3></h3>
+            <span class="close">&times;</span>
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bottom">
+            <p class="info">&copy; copyright 2025 </p>
+            <p class="info" id="about" data-title="About Us"
+                data-description="Welcome to BookBuddy — your digital companion for discovering, exploring, and falling in love with books. At BookBuddy, we believe in the transformative power of reading. Whether you;re a mystery enthusiast, a romance lover, or a seeker of knowledge, our platform curates a wide variety of genres to suit every reader's taste. We aim to create a friendly and engaging space where readers can explore new titles, revisit timeless classics, and connect with their next favorite book. With a clean interface and thoughtful features, BookBuddy is built to make your reading journey enjoyable and effortless.">
+                About Us</p>
+            <p class="info" id="terms" data-title="Terms & Policy"
+                data-description="By using BookBuddy, you agree to our terms of service and privacy policy. We value your privacy and are committed to protecting the personal information you share with us. All user data is stored securely and used only to enhance your experience on our platform — such as personalizing recommendations or communicating updates. We do not share your information with third parties without consent. Users are responsible for maintaining the confidentiality of their login credentials. BookBuddy reserves the right to update its policies, and continued use of the site implies acceptance of the latest terms.">
+                Terms & Policy </p>
+        </div>
+
+        <div class="pop-overlay">
+            <div class="pop-box">
+                <h3></h3>
+                <span class="close">&times;</span>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js-code/script.js" type="module">
+        
+        function updateCopyRight() {
+            let year = document.getElementById('year');
+            let thisYear = new Date().getFullYear();
+            year.textContent = thisYear;
+        }
+        updateCopyRight();
+
+    </script>
+</body>
+
+</html>

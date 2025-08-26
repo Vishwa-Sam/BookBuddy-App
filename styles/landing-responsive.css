@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@media (max-width: 650px) {
+  body {
+    font-size: 14px;
+  }
+   .navbar {
+        background: transparent;
+        flex-direction: row;
+    }
+    .left-section, .right-section {
+        padding-bottom: 40px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .left-section{
+        margin-left: 10px;
+    }
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .logo {
+        width: 40px;
+        height: 24px;
+    }
+    .right-section {
+        flex-direction: row;
+    }
+    .right-section p {
+        margin: 8px 5px;
+        font-size: 1rem;
+    }
+    
+    .right-section button{
+        margin-right: 10px;
+    }
+    .logging {
+        padding: 5px 2px;
+        width: 60px;
+        height: 25px;
+        font-size: 0.75rem;
+        margin-left: 5px;
+    
+    }
+    /* ----------------------------hero ------------------------------*/
+    .hero {
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;   
+        justify-content: center; 
+        text-align: center;
+    }
+    .hero p {
+        font-size: 2rem;
+        margin: 10px;
+    }
+    .hero .head-line {
+        font-size: 1rem;
+    }
+    .hero button {
+        width: 90vw;
+        max-width: 200px;
+        font-size: 1rem;
+        margin: 10px auto;
+    }
+   /* ----------------------------quotes ------------------------------*/
+  .quotes {
+    font-size: 0.95rem;
+    margin: 18px 1vw;
+    padding-left: 10px;
+    width: 96vw;
+    flex-direction: column;
+    box-shadow: 4px 4px 2px rgb(0 0 0 / 0.09);
+  }
+  .author1, .author2, .author3 {
+    width: 56px;
+    height: 56px;
+    border-radius: 32px;
+    margin: 6px;
+  }
+   /* ----------------------------body ------------------------------*/
+  .read .cards {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .cards .box-1, .box-2, .box-3 {
+    width: 90%;
+    margin: 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cards img {
+    width: 80%;
+    height: auto;
+  }
+
+  .cards .sub-heading {
+    font-size: 1.3rem;
+  }
+
+  .choose .sub-section {
+    flex-direction: column;
+  }
+
+  .sub-section img {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  ul {
+    padding-left: 20px;
+    padding-bottom: 15px;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .flex-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flex-div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .points-one {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+ /* ----------------------------download ------------------------------*/
+  .store-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .text-content{
+    padding-left: 10px;
+    text-align: center;
+  }
+  .play-store {
+    width: 45%;
+    height: auto;
+  }
+
+  .apple {
+    width: 80%;
+    height: auto;
+  }
+   /* ----------------------------footer ------------------------------*/
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+    .middle-side{
+    margin-top: -45px;
+    }
+  .left-side, .right-side, .last-side {
+    margin-top: 10px;
+  }
+
+  .right-side img {
+    width: 30px;
+  }
+  .right-side p{
+    position: relative;
+    font-weight: bold;
+    top: 24px;
+    left: 95px;
+  }
+  .extra-info {
+    flex-direction: column;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .extra-info ul {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .extra-info li {
+    padding: 5px 0;
+  }
+}
