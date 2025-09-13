@@ -30,21 +30,6 @@ BookBuddy was created as my very first project after transitioning into front-en
 
 ---
 
-## How to Access
-
-1. **Clone or Download:**  
-   Get the project files from this repository via `git clone` or download as ZIP.
-
-2. **Open Locally:**  
-   Open `index.html` in any modern web browser—no installation required.
-
-3. **Explore the Features:**  
-   - Use the search bar to find books by title or author  
-   - Click genre buttons to filter results  
-   - Add books to your wishlist for future reference
-
----
-
 ## Technologies & Tools Used
 
 - **Frontend:**  
